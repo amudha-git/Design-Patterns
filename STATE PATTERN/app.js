@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded",_init);
 let canvas;
 let consoleEl;
 
-
-
 function _init(){
     _initVariables();
     _bindEvents();
@@ -54,7 +52,6 @@ function _onToolSelection(event)
     if(!toolType){
         return;
     }
-
     toolType = toolTypeMap(toolType);
 
     canvas.setToolType(toolType);
